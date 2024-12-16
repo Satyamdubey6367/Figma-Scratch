@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAY! It's BOGO</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 0.9px solid #c8c8c8;
+      }
+
+      .container {
+        border-radius: 1px;
+        padding: 20px;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 4px 6px rgba(167, 71, 2, 0.1);
+      }
+
+      span {
+        font-size: 8px;
+        /* color: #ff6b82; */
+        /* text-align: center; */
+        /* margin-bottom: 20px; */
+        width: 100%;
+      }
+
+      .option {
+        border: 0.9px solid #ddd;
+        /* border-radius: 8px; */
+        align-items: center;
+        padding: 9px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .option2{
+        /* border: 0.9px solid #ddd; */
+        
+        align-items: center;
+      padding: 9px;
+        display: flex;
+        justify-content: space-between;
+
+      }
+      
+      .section-card{
+        border: 0.9px solid #ddd;
+        background-color: #f5e0e3;
+      }
+      .option.active {
+        border-color: #ff6b82;
+        background-color: #f0fff0;
+      }
+
+      .option input {
+        color: #ff6b82;
+        align-items: center;
+      }
+
+      .details {
+        margin-left: 10px;
+      }
+
+      /* .details {
+        color: #555;
+      } */
+
+     
+
+      select {
+      
+        border: 0.9px solid #ddd;
+      
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .footer div {
+        font-size: 9px;
+        margin-bottom: 19px;
+      }
+
+      .add-to-cart {
+        background-color: #ff6b82;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 6px;
+        width: 100%;
+      }
+
+      .add-to-cart:hover {
+        background-color: #ff6b82;
+      }
+      #effective {
+        font-size: 7px;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .header .anonymous {
+        display: inline-block;
+        background: yellow;
+        padding: 2px 8px;
+        font-size: 12px;
+        border-radius: 4px;
+      }
+  .most-popular {
+    
+   
+    background-color: #ff4f7d;
+    color: #fff;
+    font-size: 7px;
+    padding: 5px 10px;
+    align-items: center;
+  
+  }
+  
+  .offer-card.popular {
+    border: 2px solid #ff4f7d;
+    background-color: #ffe6eb;
+  }
+  .size-color {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .size-color label {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .size-color select {
+    padding: 5px;
+    width: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+  }
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .subtext {
+    color: #888;
+    font-size: 12px;
+  }
+  .offer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .offer-header input {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .badge {
+    background-color: #ff4f7d;
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div style="color: #ff6b82; width: 100%">
+          <div
+            style="
+              border: 0.4px solid grey;
+              width: 23%;
+              margin-bottom: -10px;
+              margin-left: 18px;
+            "
+          ></div>
+          YAY! It's BOGO
+          <div
+            style="
+              border: 0.4px solid grey;
+              width: 23%;
+              margin-left: 186px;
+              margin-top: -9px;
+            "
+          ></div>
+        </div>
+      </div>
+
+      <!-- Option 1 -->
+      <div class="option">
+        <input type="radio" name="bundle" id="option1" style="margin: 0px" />
+        <div
+          class="details"
+          style="display: flex; width: 100%; justify-content: space-between"
+        >
+          <div style="gap: 5px; height: 20px; margin-left: -6px">
+            <div>
+              <span>1 Unit</span
+              ><span style="background-color: #ff6b82; margin-left: 2px"
+                >10% OFF  <div><span style="margin-top: 5px;">standerd price</span></div> </span
+              >
+            
+            </div>
+          </div>
+          <div>
+            <div>
+              <span>$10.00 USD</span>
+            </div>
+            <div style="font-size: 6px">
+              <del>$24.00 USD</del>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- option 2 -->
+      <div class="offer-card popular">
+        <div class="option2">
+          <input type="radio" name="bundle" id="option1" style="margin: 0px" />
+          <div
+            class="details"
+            style="display: flex; width: 100%; justify-content: space-between"
+          >
+            <div style="gap: 5px; height: 20px; margin-left: -6px">
+              <div>
+                <span>2 Unit</span
+                ><span style="background-color: #ff6b82; margin-left: 2px"
+                  >20% OFF  </span
+                >
+              
+              </div>
+            </div>
+            <div>
+              <div>
+                <span>$10.00 USD</span>
+              </div>
+              <div style="font-size: 6px">
+                <del>$24.00 USD</del>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  
+        <div class="size-color">
+          <div>
+            <label>Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div>
+            <label>Colour</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="size-color">
+          <div>
+            <label>Size</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+          </div>
+          <div>
+            <label>Colour</label>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+        <span class="most-popular">MOST POPULAR</span>
+      </div>
+      
+     
+     
+
+       
+          <!-- <div class="dropdowns">
+            <div>
+              <select id="size1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label for="color1">Colour</label>
+              <select id="color1">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+              </select>
+            </div>
+          </div> -->
+          <!-- <div class="dropdowns">
+            <div>
+              <label for="size2">#2 Size</label>
+              <select id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label for="color2">Colour</label>
+              <select id="color2">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+              </select>
+            </div>
+          </div>  -->
+       
+     
+
+      <!-- Option 3 -->
+      <div class="option">
+        <input type="radio" name="bundle" id="option1" style="margin: 0px" />
+        <div
+          class="details"
+          style="display: flex; width: 100%; justify-content: space-between"
+        >
+          <div style="gap: 5px; height: 20px; margin-left: -6px">
+            <div>
+              <span>3 Unit</span
+              ><span style="background-color: #ff6b82; margin-left: 2px"
+                >30% OFF</span
+              >
+            </div>
+          </div>
+          <div>
+            <div>
+              <span>$24.00 USD</span>
+            </div>
+            <div style="font-size: 6px">
+              <del>$24.00 USD</del>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer"
+        style="display: flex; width: 100%; justify-content: space-between"
+      >
+        <div style="color: #ff6b82">Free Delivery</div>
+        <div>Total: <strong>$18.00 USD</strong></div>
+      </div>
+
+      <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+  </body>
+</html>
